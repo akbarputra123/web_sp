@@ -1,0 +1,32 @@
+p{
+    margin: 20px;
+}
+.biling{
+    margin: 10px;
+    text-align: center;
+    color: #001F3F;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    width: 80vw;
+}
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px;
+}
+button:hover {
+    opacity: 0.6;
+}
+button[onclick="showDashboard()"] {
+    background-color: #001F3F;
+    color: white;
+    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.b{
+   
+}

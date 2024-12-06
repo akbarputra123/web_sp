@@ -1,0 +1,81 @@
+/* Styling untuk heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.KRS {
+    width: 80vw;
+    margin: 20px;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#editKRSForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Styling untuk label */
+#editKRSForm label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+/* Styling untuk input dan select */
+#editKRSForm input[type="text"],
+#editKRSForm input[type="number"],
+#editKRSForm select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#editKRSForm input[type="text"]:focus,
+#editKRSForm input[type="number"]:focus,
+#editKRSForm select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Styling untuk tombol */
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+    background-color: #309f1a;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+/* Styling untuk tombol kembali */
+button[type="button"] {
+    background-color: #bdc3c7;
+    color: white;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .KRS {
+        padding: 15px;
+    }
+
+    #editKRSForm input,
+    #editKRSForm button {
+        font-size: 14px;
+    }
+}

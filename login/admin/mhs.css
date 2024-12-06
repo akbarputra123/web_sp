@@ -1,0 +1,101 @@
+/* Gaya umum untuk tabel dan form */
+.container {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #002855;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #002855;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Gaya dropdown untuk status */
+.status-dropdown {
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.status-dropdown:focus {
+    outline: none;
+    border-color: #002855;
+}
+
+/* Gaya tombol untuk aksi */
+button {
+    color: white;
+    background-color: #001F3F;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Responsivitas */
+@media (max-width: 720px) {
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .status-dropdown {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    /* Pastikan tabel bisa digulir secara horizontal */
+    .container {
+        overflow-x: auto;
+    }
+}

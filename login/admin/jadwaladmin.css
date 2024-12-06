@@ -1,0 +1,114 @@
+.jadwal {
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.jadwal h1 {
+    font-size: 24px;
+    color: #002855;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.tabel-jadwal {
+    width: 80vw;
+    border-collapse: collapse;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.tabel-jadwal th {
+    background-color: #002855;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.tabel-jadwal td {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+.tabel-jadwal tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabel-jadwal tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Tombol edit */
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+    background-color: #979a9c;
+}
+button:hover {
+    opacity: 0.6;
+}
+button[onclick="showDashboard()"] {
+    background-color: #001F3F;
+    color: white;
+    margin-top: 10px;
+    margin-top: 20px;
+}
+
+/* Tombol khusus */
+.edit-button {
+    color: white;
+    background-color: green;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Responsivitas untuk layar dengan lebar maksimal 720px */
+@media (max-width: 720px) {
+    /* Pastikan tabel memenuhi lebar layar */
+    .tabel-jadwal {
+        width: 100%;
+        font-size: 12px; /* Kurangi ukuran font untuk layar kecil */
+    }
+    .tabel-jadwal th, 
+    .tabel-jadwal td {
+        padding: 8px; /* Sesuaikan padding */
+        text-align: left; /* Ubah ke rata kiri untuk layar kecil */
+    }
+    
+    /* Ubah tombol menjadi block agar tidak bertumpuk */
+    .edit-button,
+    .delete-button {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    /* Kurangi margin dan padding tombol */
+    button, .edit-button, .delete-button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    /* Buat tabel scrollable secara horizontal */
+    .jadwal {
+        overflow-x: auto;
+    }
+}
